@@ -1,0 +1,68 @@
+<html>
+    <title> The Book Store </title>
+    <style>
+    img{
+        width:300px;
+    
+
+
+    }
+    input{
+        width:300px
+    }
+    </style>
+    <script>
+        function purchase(){
+            var quantity1=document.getElementByID("quantity1");
+            var quantity2=document.getElementByID("quantity2");
+            var quantity3=document.getElementByID("quantity3");
+            var output=document.getElementByID("output");
+            var Re_Vol_7= "$7.59";
+            var wholesale_price1= "$8.66";
+            var retail1=(retail1="$9.99");
+            var profit1=(retail1*parseFloat(quantity1.value)-(parseFloat((wholesale_price1.value)*parseFloat(quantity1.value)))
+            var subtotal = (parseFloat(retail.value))
+
+
+        }
+
+   </script>
+   </head>
+   <body>
+       <div>
+       <h1>Tokyo Ghoul re: Volume 7</h1>
+       <img src="images\Re_Vol_7.png "><br>
+       <span> Price:$7.59
+       </span>
+       <p>
+       Wonderful art done by Ishida Sui.<br>
+       The volume kicks off with Eto's confession to being a ghoul goes viral.
+
+       </p>
+       Quantity: <input type="text" id="quantity1">
+    
+
+    
+        <br>
+        <h1>Dragon Ball Z Volume 25</h1>
+        <img src="images\V25.JPG"><br>
+        <span> Price:$9.99
+        </span>
+        <p>
+        Gohan is off training on supreme kais' planet while Goten Trunks are Fused and Fighting Majin Buu.
+        </p>
+        Quantity: <input type="text" id="quantity2">
+
+       <br>
+       <h1>Cirque du Freak Book 12</h1>
+       <img src="images\9780316016636.JPG"><br>
+       <span> Price:$7.98
+       </span>
+       <p>
+        The Conclusion to the saga of Darren Shan.<br>
+        Mr.Tiny reveals his plans for what he has in store for Darren.    
+       </p>
+       Quantity:<input type="text"id="quantity3">
+    </div>
+   </body>
+</html>
