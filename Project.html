@@ -1,0 +1,124 @@
+<html>
+    <title> The Book Store </title>
+    <style>
+    img{
+        width:300px;
+    
+
+
+    }
+    input{
+        width:300px
+    }
+    </style>
+    <script>
+        function purchaseRe_Vol_7(){
+            var quantity1=document.getElementByID("quantity1");
+            var output1=document.getElementByID("output1");
+            var Re_Vol_7= "$7.59";
+            var wholesale_price1= "$8.66";
+            var retail1=(retail1="$9.99");
+            var profit1=(retail1*parseFloat(quantity1.value)-(parseFloat((wholesale_price1.value)*parseFloat(quantity1.value))))
+            var subtotal = (parseFloat(retail.value))*parseINT(quantity1.value);
+            var build="";
+            build+="You bought"+quantity1.value;
+            build+="The retail for Re_Vol_7"+subtotal;
+            console.log("Retail per item="+retail);
+            console.log("Amount bought="+ parseINT(quantity1.value));
+            console.log("Subtotal="+parseINT(subtotal1.value));
+            console.log("_______________________________________");
+            console.log("Profit made="+parseFloat(profit1.value));
+            output1.innerHTML=build;
+         function purchaseV25(){
+            var quantity2=document.getElementBYID("quantity2")
+            var output2=document.getElementByID("outoput2")
+            var V25= "$9.99";
+            var wholesale_price2= "$8.66";
+            var retail2=(retail2="$8.99");
+            var profit2=(retail2*parseFloat(quantity2.value)-(parseFloat((wholesale_price2.value)*parseFloat(quantity2.value))))
+            var subtotal = (parseFloat(retail.value))*parseINT(quantity2.value);
+            var build="";
+            build+="You bought"+quantity2.value;
+            build+="The retail for V25"+subtotal;
+            console.log("Retail per item="+retail);
+            console.log("Amount bought="+ parseINT(quantity1.value));
+            console.log("Subtotal="+parseINT(subtotal2.value));
+            console.log("_______________________________________");
+            console.log("Profit made="+parseFloat(profit2.value));
+            output2.innerHTML=build;
+            }
+        function purchase9780316016636(){
+            var P9780316016636 = "$7.98";
+            var quantity3=document.getElementById("quantity3")
+            var output3=document.getElementById("output3")
+            var wholesale_price1= "$8.66";
+            var retail1=(retail1="$9.99");
+            var profit1=(retail1*parseFloat(quantity1.value)-(parseFloat((wholesale_price1.value)*parseFloat(quantity1.value))))
+            var subtotal = (parseFloat(retail.value))*parseINT(quantity1.value);
+            var build="";
+            build+="You bought"+quantity3.value;
+            build+="The retail for 9780316016636"+subtotal;
+            console.log("Retail per item="+retail);
+            console.log("Amount bought="+ parseINT(quantity3.value));
+            console.log("Subtotal="+parseINT(subtotal3.value));
+            console.log("_______________________________________");
+            console.log("Profit made="+parseFloat(profit3.value));
+            output3.innerHTML=build;
+            }
+
+
+        }
+
+   </script>
+   </head>
+   <body>
+       <div>
+       <h1>Tokyo Ghoul re: Volume 7</h1>
+       <img src="images\Re_Vol_7.png "><br>
+       <span> Price:$7.59
+       </span>
+       <p>
+       Wonderful art done by Ishida Sui.<br>
+       The volume kicks off with Eto's confession to being a ghoul goes viral.
+
+       </p>
+       Quantity: <input type="text" id="quantity1">
+       <div id="output1"></div>
+       <button onclick="quantity1";>
+            Buy
+       </button>
+    
+
+    
+        <br>
+        <h1>Dragon Ball Z Volume 25</h1>
+        <img src="images\V25.JPG"><br>
+        <span> Price:$9.99
+        </span>
+        <p>
+        Gohan is off training on supreme kais' planet while Goten Trunks are Fused and Fighting Majin Buu.
+        </p>
+        Quantity: <input type="text" id="quantity2">
+        <div id="output2"></div>
+        <button onclick="quantity2";>
+             Buy
+        </button>
+
+       <br>
+       <h1>Cirque du Freak Book 12</h1>
+       <img src="images\9780316016636.JPG"><br>
+       <span> Price:$7.98
+       </span>
+       <p>
+        The Conclusion to the saga of Darren Shan.<br>
+        Mr.Tiny reveals his plans for what he has in store for Darren.    
+       </p>
+       Quantity:<input type="text"id="quantity3">
+
+       <div id="output3"></div>
+       <button onclick="quantity3";>
+            Buy
+       </button>
+    </div>
+   </body>
+</html>
